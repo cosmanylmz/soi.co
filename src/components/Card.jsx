@@ -5,7 +5,9 @@ function Card({ name, price, image }) {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.imageContainer}>
-          <img src="./assets/1.jpg" />
+          {/* Added alt attribute, using 'name' for descriptive text. */}
+          {/* Also, dynamically setting src from 'image' prop is usually more flexible. */}
+          <img src={image} alt={name} />
         </div>
         <h3 className={styles.title}>{name}</h3>
         <p className={styles.price}>{price} ₺</p>
