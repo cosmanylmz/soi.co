@@ -1,0 +1,3 @@
+[build]
+  command = "npx update-browserslist-db@latest && CI=false npm run build"
+  publish = "build"
