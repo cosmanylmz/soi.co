@@ -16,7 +16,8 @@ function Footer({ language }) {
           </div>
           <div className={styles.rightContainer}>
             <a
-              href="https://maps.app.goo.gl/wPGsiXemYCP9Z2yF7"
+              // Corrected href for Google Maps, replace with your actual map link
+              href="https://www.google.com/maps/search/?api=1&query=Meşrutiyet, Olgunlar Cd. No:3 D:B, 06420 Çankaya/Ankara, Ankara, Turkey"
               target="_blank"
               rel="noreferrer"
               className={styles.social}
@@ -24,7 +25,7 @@ function Footer({ language }) {
               <img
                 src="./assets/location-outline.svg"
                 className={styles.icon}
-                alt="Location"
+                alt="Konum bilgisi" // Added alt attribute
               />
               Meşrutiyet, Olgunlar Cd. No:3 D:B, 06420 Çankaya/Ankara, Ankara,
               Turkey, 06530, Ankara, Turkey 06420
@@ -36,14 +37,14 @@ function Footer({ language }) {
               <img
                 src="./assets/logo-instagram.svg"
                 className={styles.icon}
-                alt="Social"
+                alt="Instagram profili" // Added alt attribute
               />
               <span>@soicoffeeco</span>
             </a>
           </div>
         </div>
         <p className={styles.copyright}>
-          &copy; {year}{" "}
+          © {year}{" "}
           {language === "TR"
             ? "SoiCo. Tüm hakları saklıdır."
             : "SoiCo. All rights reserved."}
