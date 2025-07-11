@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
+// import Main from "./components/Main"; // Main might be used inside Homepage or Menu, or removed if not needed
 
 import data from "./data/menuData.json";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -15,6 +15,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <Navbar language={language} setLanguage={setLanguage} /> {/* Example usage */}
         <Routes>
           <Route
             index
@@ -33,6 +34,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer /> {/* Example usage */}
       </BrowserRouter>
     </div>
   );
