@@ -21,7 +21,8 @@ const translations = {
   },
 };
 
-function Navbar({ language, setLanguage, hideOptionalMenu }) {
+// Removed 'hideOptionalMenu' prop as it's not used in this component's logic.
+function Navbar({ language, setLanguage }) {
   const t = translations[language];
 
   return (
