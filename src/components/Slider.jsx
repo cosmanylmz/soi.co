@@ -1,3 +1,4 @@
+// Slider.js (Corrected)
 import React from "react";
 import styles from "./Slider.module.css"; // CSS modülünü içe aktar
 import { NavLink } from "react-router-dom";
@@ -72,8 +73,13 @@ export default function Slideshow({ language }) {
           <NavLink to="/menu" className={styles.btn}>
             {t.menu}
           </NavLink>
-          <a className={styles.btn}>{t.franchise}</a>
-          <a className={styles.btn}>{t.suggestions}</a>
+          {/* Added href="#" for placeholder links. Consider using <button> if no navigation is intended. */}
+          <a href="#" className={styles.btn}>
+            {t.franchise}
+          </a>
+          <a href="#" className={styles.btn}>
+            {t.suggestions}
+          </a>
         </div>
       </div>
       <div
@@ -85,7 +91,8 @@ export default function Slideshow({ language }) {
       >
         {images.concat(images[0]).map((image, idx) => (
           <div className={styles.slide} key={idx}>
-            <img src={`/assets/slider/${image}`} alt={`Slide ${idx + 1}`} />
+            {/* Alt attribute is good. If images have more specific meaning, use a more descriptive alt. */}
+            <img src={`/assets/slider/${image}`} alt={`Slider resmi ${idx + 1}`} />
           </div>
         ))}
       </div>
