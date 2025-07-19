@@ -19,3 +19,10 @@
 .icon {
   width: 32px;
 }
+
+@media (max-width: 480px) {
+  .bannerContainer {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}

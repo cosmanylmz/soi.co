@@ -30,3 +30,13 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .productGroup {
+    padding: 1rem;
+  }
+
+  .productGroupTitle {
+    font-size: 2.5rem;
+  }
+}

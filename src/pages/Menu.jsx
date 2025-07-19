@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 
-function Homepage({
+function Menu({
   data,
   selectedCategory,
   setSelectedCategory,
@@ -27,4 +27,4 @@ function Homepage({
   );
 }
 
-export default Homepage;
+export default Menu;

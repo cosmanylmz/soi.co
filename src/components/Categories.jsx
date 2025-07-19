@@ -13,18 +13,25 @@ function Categories({ categories, selectedCategory, setSelectedCategory }) {
   return (
     <div>
       <div className={styles.categories}>
-        {categories.map((category) => (
-          <ScrollLink
-            to="menu"
-            smooth={true}
-            duration={500}
-            className={styles.item}
-            key={category.type}
-            onClick={() => handleCategoryClick(category.type)}
-          >
-            {category.title}
-          </ScrollLink>
-        ))}
+        {categories.map((category) => {
+          const isSelected = selectedCategory === category.type;
+          const isAllProducts = category.type === "products";
+
+          return (
+            <ScrollLink
+              to="menu"
+              smooth={true}
+              duration={500}
+              className={`${styles.item} ${isSelected ? styles.selected : ""} ${
+                isAllProducts && !selectedCategory ? styles.selected : ""
+              }`}
+              key={category.type}
+              onClick={() => handleCategoryClick(category.type)}
+            >
+              {category.title}
+            </ScrollLink>
+          );
+        })}
       </div>
     </div>
   );
