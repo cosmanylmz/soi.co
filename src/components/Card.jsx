@@ -5,7 +5,7 @@ function Card({ name, price, image }) {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.imageContainer}>
-          <img src="./assets/1.jpg" />
+          <img src="./assets/1.jpg" alt={name} />
         </div>
         <h3 className={styles.title}>{name}</h3>
         <p className={styles.price}>{price} ₺</p>

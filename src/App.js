@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Main from "./components/Main";
 
 import data from "./data/menuData.json";
 import { BrowserRouter, Route, Routes } from "react-router-dom";

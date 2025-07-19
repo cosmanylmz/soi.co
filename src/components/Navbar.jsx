@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Logo from "./Logo";
 import styles from "./Navbar.module.css";

@@ -72,8 +72,8 @@ export default function Slideshow({ language }) {
           <NavLink to="/menu" className={styles.btn}>
             {t.menu}
           </NavLink>
-          <a className={styles.btn}>{t.franchise}</a>
-          <a className={styles.btn}>{t.suggestions}</a>
+          <button className={styles.btn}>{t.franchise}</button>
+          <button className={styles.btn}>{t.suggestions}</button>
         </div>
       </div>
       <div
