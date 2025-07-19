@@ -1,0 +1,83 @@
+.nav {
+  background-color: var(--color-brand--2);
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.innerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.scrollLink,
+.navLink {
+  cursor: pointer;
+  font-size: 1.75rem;
+  font-weight: 700;
+  transition: transform 0.3s ease; /* Scale animasyonu için transition */
+}
+
+.scrollLink:hover,
+.navLink:hover {
+  transform: scale(1.1); /* Hover olduğunda %10 büyüme */
+}
+
+.mainList {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.optionalMenu {
+  display: flex;
+  gap: 3rem;
+}
+
+.languageMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.language {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-light--1);
+}
+
+.language.active {
+  color: var(--color-brand--1);
+}
+
+.active {
+  color: var(--color-brand--1);
+}
+
+@media (max-width: 720px) {
+  .innerNav {
+    padding: 1rem;
+  }
+
+  .mainList {
+    gap: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .scrollLink,
+  .navLink {
+    font-size: 1.5rem;
+  }
+
+  .optionalMenu {
+    gap: 1.5rem;
+  }
+
+  .languageMenu {
+    font-size: 1rem;
+  }
+}

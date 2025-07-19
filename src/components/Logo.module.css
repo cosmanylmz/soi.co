@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  width: 10rem;
+}
+
+a {
+  display: inline-block;
+}
+
+@media (max-width: 720px) {
+  .logo {
+    width: 8rem;
+  }
+}
